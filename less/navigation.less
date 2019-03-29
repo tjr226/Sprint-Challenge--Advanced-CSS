@@ -7,10 +7,17 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 5px 0 20px 0;
+
+
 }
 
 header h1 {
     font-size: 5rem;
+    @media @phone {
+        // test to check that @media @phone is working
+        // color:blue;
+    }
+
 }
 
 header nav {
@@ -19,5 +26,8 @@ header nav {
 
 header nav a {
     .nav-a-mixin;
+    @media @phone {
+        margin: .5rem;
+    }
 }
 

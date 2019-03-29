@@ -23,4 +23,38 @@
 @btn-bg-color: #22283A;
 @border-real: #dee2e6;
 
-// Mobile var
+// Mobile var  
+
+@phone: ~"(max-width: 500px)";
+
+// button stuff
+
+.parametric-button(@background-color, @color) {
+    // background-color:@eastern-blue;
+    background-color:@background-color;
+    // color: @white;
+    color:@color;
+    padding: 10px 20px 10px 10px;
+    width: 80%;
+    font-size: 2rem;
+    text-align:center;
+    border-radius: 10px;
+
+            /* Firefox */
+    -moz-transition: all .3s ease-in;
+    /* WebKit */
+    -webkit-transition: all .3s ease-in;
+    /* Opera */
+    -o-transition: all .3s ease-in;
+    /* Standard */
+    transition: all .3s ease-in;
+}
+
+// comment to refresh
+
+.parametric-animation(@new-background-color, @new-font-color) {
+    background-color:@new-background-color;
+    color:@new-font-color;
+}
+
+//

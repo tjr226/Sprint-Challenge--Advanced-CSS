@@ -1,1 +1,14 @@
-// Mixins Here
+.nav-a-text {
+    text-decoration: none;
+    color: @river-bend;
+    font-size: 2rem;
+}
+
+.nav-a-margin {
+    margin: 15px;
+}
+
+.nav-a-mixin {
+    .nav-a-text;
+    .nav-a-margin;
+}

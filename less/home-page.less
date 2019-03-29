@@ -57,7 +57,18 @@
         margin-bottom: 26px;
       }
 
+  
+
       .btn {
+        .parametric-button(@btn-bg-color, @porcelain);
+    
+        // @media @phone {
+        //   width: 90%;
+        //     }
+      }
+    
+      .btn:hover {
+        .parametric-animation(@porcelain, @btn-bg-color);
       }
     }
 
